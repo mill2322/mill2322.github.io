@@ -29,14 +29,42 @@
 			</ol>	
 			<p>Select an icon below to get started:</p>
 			<a href="Shelter.html">
-			<img id="shelter-id" src="Shelter-icon.png">
+			<img id="shelter-id" src="Shelter-icon.png" onMouseOver="MouseHoverShelter(this)" onMouseOut="MouseStopHoverShelter(this)"  >
 			</a>
 			<a href="Fire.html">
-			<img id="fire-id" src="Fire-icon.png">
+			<img id="fire-id" src="Fire-icon.png" onMouseOver="MouseHoverFire(this)" onMouseOut="MouseStopHoverFire(this)" >
 			</a>
 			<a href="Water.html">
-			<img id="water-id" src="Water-icon.png">
+			<img id="water-id" src="Water-icon.png" onMouseOver="MouseHoverWater(this)" onMouseOut="MouseStopHoverWater(this)" >
 			</a>
+			
+			<script language="javascript">
+				function MouseHoverShelter(shelterPic) {
+				shelterPic.src = "Shelter-icon2.png";
+				}
+				function MouseStopHoverShelter(shelterPic) {
+				shelterPic.src = "Shelter-icon.png";
+				}
+			</script>
+			
+			<script language="javascript">
+				function MouseHoverFire(firePic) {
+				firePic.src = "Fire-icon2.png";
+				}
+				function MouseStopHoverFire(firePic) {
+				firePic.src = "Fire-icon.png";
+				}
+			</script>
+			
+			<script language="javascript">
+				function MouseHoverWater(waterPic) {
+				waterPic.src = "Water-icon2.png";
+				}
+				function MouseStopHoverWater(waterPic) {
+				waterPic.src = "Water-icon.png";
+				}
+			</script>
+			
 		</div>
 	</div>
   </body>
